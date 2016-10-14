@@ -1,0 +1,10 @@
+{
+	"heading":"My To Do application",
+	"taskid":"Task Id",
+	"taskname":"Task Name",
+	"markcompleted":"Mark Completed",
+	"removetask":"Remove Task",
+	"remove":"Remove",
+	"addtask":"Add Task",
+	"language":"Language :"
+}

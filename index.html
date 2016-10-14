@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+
+<head>
+    <title>TO-DO App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body ng-controller="todoController">
+    <section class="container-fluid">
+        <header>
+            <!-- header part starts here -->
+            <h1 translate="heading"></h1>
+
+           
+        </header>
+        <!-- header parts end here -->
+        <div class="content">
+            <!-- content starts here -->
+            <div class="lan"> <label translate="language"></label>
+            <select ng-change="lan(langval)" ng-model="langval">
+                <option value="en" >English</option>
+                <option value="tn">தமிழ்</option>
+                <option value="tl">తెలుగు</option>
+            </select></div><div class="clear"></div>
+            <p class="add" ng-click="open()" ng-hide="add_hide" translate="addtask"></p>
+            <div class="clear"></div>
+            
+            <div class="Task_table col-xs-12">
+                <table class="Task_details col-xs-12">
+                    <tr class="head">
+                        <td>#</td>
+                        <td translate="taskid">Task Id</td>
+                        <td translate="taskname">Task Name</td>
+                        <td translate="markcompleted">Mark Completed</td>
+                        <td translate="removetask">Remove Task</td>
+                    </tr>
+                    <tr ng-repeat="eachtask in task" ng-class="{completed:checked}">
+                        <td>{{$index + 1}}</td>
+                        <td>{{eachtask.task_id}}</td>
+                        <td>{{eachtask.Task_name}}</td>
+                        <td>
+                            <input type="checkbox" name="status" ng-model="checked">
+                        </td>
+                        <td class="remove" ng-click="removetask(eachtask)" translate="remove">Remove</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <!-- content ends here -->
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="node_modules/angular-translate/dist/angular-translate.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-translate-loader-partial/angular-translate-loader-partial.min.js"></script> 
+   <script type="text/javascript" src="node_modules/angular-mocks/angular-mocks.js"></script>
+    
+   
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

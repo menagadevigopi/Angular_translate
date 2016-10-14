@@ -1,0 +1,76 @@
+.container-fluid{
+	margin: 30px auto 0 auto;
+	
+}
+.content{
+	width: 85%;
+	margin: 0 auto;
+	text-align: center;
+}
+header h1{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 30px;
+}
+.lan{
+	float: right;
+}
+.add{
+	float: right;
+	color: #2772c1;
+	margin:15px 0;
+	cursor: pointer;
+}
+.clear{
+	clear: both;
+}
+
+.Task_details{
+	border-top: 1px solid #b5b1b1;
+}
+tr{
+	border-bottom: 1px solid #b5b1b1;
+   
+}
+td {
+  padding:20px 20px 20px 0!important;
+}
+
+td:first-child {
+  padding-left:20px;
+  padding-right:0;
+}
+tr:last-child {
+	border-bottom:none;
+}
+.head td{
+	font-weight: bold;
+}
+.completed{
+	background-color: #d2d0d0;
+}
+.remove{
+	color: #2772c1;
+	cursor: pointer;
+}
+.Add_button{
+	background-color:#0962bd;
+	padding: 7px 15px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+}
+.Cancel_button{
+	background-color: #5ac7f1;
+	padding: 7px 15px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+}
+.newtask{
+	margin: 20px 0;
+}
+fieldset{
+	margin-bottom: 15px!important;
+	
+}

@@ -1,0 +1,26 @@
+
+<div class="popup">
+    <form class="newtask" ng-hide="hide" class="col-xs-12">
+                <fieldset class="form-group">
+                    <div class="row">
+                        <label for="text" class="col-xs-4" translate="taskid">Task Id :</label>
+                        <input type="text" name="Task Id" ng-model="tid" class="col-xs-5">
+                    </div>
+                </fieldset>
+                <fieldset class="row">
+                    <label class="col-xs-4" translate="taskname">Task Name :</label>
+                    <input type="text" name="Task Name" ng-model="tname" class="col-xs-5">
+                </fieldset>
+                <div class="row">
+                    <div class="col-xs-4"></div>
+                    <div class="col-xs-3">
+                        <button class="Add_button" ng-click="addtask()" translate="add"></button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="Cancel_button" ng-click="cancel()" translate="cancel"></button>
+                    </div>
+
+                </div>
+
+            </form>
+</div>
